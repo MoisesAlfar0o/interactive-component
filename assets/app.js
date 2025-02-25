@@ -9,7 +9,7 @@ const outOf = d.getElementById('rating-selected');
 let selectedRating = null;
 
 function ratingSelected(e){
-    selectedRating = e.target.getAttribute("data-value");
+    selectedRating = e.target.getAttribute('data-value');
     if(selectedRating >= 1 && selectedRating <= 5){
         outOf.textContent = selectedRating;
     }
@@ -24,7 +24,7 @@ function changeCard(){
 }
 
 buttons.forEach(btn =>{
-    btn.addEventListener("click", ratingSelected);
+    btn.addEventListener('click', ratingSelected);
 });
 
 btnSubmit.addEventListener('click', changeCard);
